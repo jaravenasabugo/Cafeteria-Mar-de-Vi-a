@@ -15,9 +15,9 @@ const Navbar = () => {
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-black border border-[#C7A14A] rounded-full flex items-center justify-center overflow-hidden">
               <img 
-                src="/images/Logo.jpeg" 
+                src="/images/Logo.png" 
                 alt="Mar de Viña Logo" 
-                className="w-8 h-8 object-contain"
+                className="w-10 h-10 object-contain"
               />
             </div>
             <div>
