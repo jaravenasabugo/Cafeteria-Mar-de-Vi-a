@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 
 interface Location {
   id: number;
@@ -81,18 +81,6 @@ const Locations = () => {
                 <div className="flex items-start gap-3 group/item hover:translate-x-1 transition-transform duration-300">
                   <Clock className="w-5 h-5 text-[#C7A14A] flex-shrink-0 mt-1 group-hover/item:scale-110 transition-transform" />
                   <p className="text-white/80 font-light">{location.hours}</p>
-                </div>
-
-                <div className="flex items-start gap-3 group/item hover:translate-x-1 transition-transform duration-300">
-                  <Phone className="w-5 h-5 text-[#C7A14A] flex-shrink-0 mt-1 group-hover/item:scale-110 transition-transform" />
-                  <a
-                    href={`https://wa.me/${location.phone.replace(/\s/g, '')}`}
-                    className="text-white/80 font-light hover:text-[#C7A14A] transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {location.phone}
-                  </a>
                 </div>
 
               </div>
