@@ -21,12 +21,7 @@ const ConvenioMarco = () => {
             </h2>
             <div className="h-[2px] w-24 bg-gradient-to-r from-transparent via-[#C7A14A] to-transparent mb-4 md:mb-6 animate-pulse-slow"></div>
             <p className="text-base sm:text-lg text-white/80 font-light leading-relaxed mb-4 md:mb-6">
-              Contamos con convenio marco para instituciones y empresas. Ofrecemos beneficios 
-              especiales y condiciones preferenciales para compras institucionales, facilitando 
-              el acceso a nuestros servicios y productos con la calidad que nos distingue.
-            </p>
-            <p className="text-sm sm:text-base text-white/70 font-light leading-relaxed mb-4 md:mb-6">
-              Consulta con nosotros para conocer los detalles y requisitos de nuestro convenio marco.
+            Estamos presentes en el Convenio Marco de Alimentos, contactanos para más información..
             </p>
             <button
               onClick={scrollToContact}

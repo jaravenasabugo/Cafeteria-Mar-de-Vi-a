@@ -1,23 +1,15 @@
-import { useState } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Locations from './components/Locations';
-import Catering from './components/Catering';
-import ConvenioMarco from './components/ConvenioMarco';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import PoliticaPrivacidad from './components/PoliticaPrivacidad';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Navbar />
-      <Hero />
-      <Locations />
-      <Catering />
-      <ConvenioMarco />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/politica_privacidad" element={<PoliticaPrivacidad />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
