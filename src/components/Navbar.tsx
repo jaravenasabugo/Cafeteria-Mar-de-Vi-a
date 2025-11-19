@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   const handleLogin = () => {
-    window.location.href = 'https://cafe-mar-order-flow.vercel.app/login';
+    window.location.href = '/login';
   };
 
   return (
