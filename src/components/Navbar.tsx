@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const Navbar = () => {
   const scrollToLocations = () => {
     document.getElementById('locations')?.scrollIntoView({ behavior: 'smooth' });
@@ -7,6 +5,10 @@ const Navbar = () => {
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleLogin = () => {
+    window.location.href = 'https://cafe-mar-order-flow.vercel.app/login';
   };
 
   return (
@@ -42,12 +44,12 @@ const Navbar = () => {
             >
               Contacto
             </button>
-            <Link
-              to="/login"
+            <button
+              onClick={handleLogin}
               className="px-6 py-2 bg-[#C7A14A] text-black hover:bg-[#d4b056] hover:scale-105 transition-all duration-300 font-light rounded-lg"
             >
               Login
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
